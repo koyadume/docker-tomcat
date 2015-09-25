@@ -1,5 +1,5 @@
 # Base Image
-FROM ${baseImage}
+FROM koyadume/java:8.x
 
 # Maintainer
 MAINTAINER Shailendra Singh <shailendra_01@outlook.com>
