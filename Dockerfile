@@ -20,5 +20,6 @@ RUN wget "$TOMCAT_DOWNLOAD_URL" -O $LOCAL_FILE  \
 COPY setenv.sh bin/
 
 EXPOSE 8080
+
 CMD ["catalina.sh", "run"]
 
