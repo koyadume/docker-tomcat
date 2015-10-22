@@ -13,7 +13,7 @@ ENV TOMCAT_DOWNLOAD_URL http://www.us.apache.org/dist/tomcat/tomcat-8/v8.0.26/bi
 ENV LOCAL_FILE tomcat.tar.gz
 
 RUN wget "$TOMCAT_DOWNLOAD_URL" -O $LOCAL_FILE  \
-    && tar -xvf $LOCAL_FILE --strip-components=1 \
+    && tar -xf $LOCAL_FILE --strip-components=1 \
     && rm $LOCAL_FILE \
     && rm bin/*.bat
 
