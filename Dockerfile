@@ -1,5 +1,5 @@
 # Base Image
-FROM koyadume/docker-java
+FROM koyadume/docker-java:dockerhub-8u65
 
 # Maintainer
 MAINTAINER Shailendra Singh <shailendra_01@outlook.com>
