@@ -1,5 +1,5 @@
 # Base Image
-FROM koyadume/docker-java:dockerhub-8u65
+FROM koyadume/java:8u74
 
 # Maintainer
 MAINTAINER Shailendra Singh <shailendra_01@outlook.com>
@@ -9,7 +9,7 @@ ENV PATH $CATALINA_HOME/bin:$PATH
 RUN mkdir -p "$CATALINA_HOME"
 WORKDIR $CATALINA_HOME
 
-ENV TOMCAT_DOWNLOAD_URL http://www.us.apache.org/dist/tomcat/tomcat-8/v8.0.28/bin/apache-tomcat-8.0.28.tar.gz
+ENV TOMCAT_DOWNLOAD_URL http://www.us.apache.org/dist/tomcat/tomcat-8/v8.0.32/bin/apache-tomcat-8.0.32.tar.gz
 ENV LOCAL_FILE tomcat.tar.gz
 
 RUN wget "$TOMCAT_DOWNLOAD_URL" -O $LOCAL_FILE  \
